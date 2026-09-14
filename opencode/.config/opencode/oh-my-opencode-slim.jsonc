@@ -1,0 +1,130 @@
+{
+  "$schema": "https://unpkg.com/oh-my-opencode-slim@latest/oh-my-opencode-slim.schema.json",
+  "preset": "default",
+  "compactSidebar": true,
+  "showStartupToast": true,
+  "companion": {
+    "enabled": false
+  },
+  "multiplexer": {
+    "enabled": false
+  },
+  "presets": {
+    "default": {
+      "orchestrator": {
+        "model": [
+          "openai/gpt-5.6-terra",
+          "opencode-go/minimax-m3",
+          "opencode-go/glm-5.2",
+          "opencode-go/deepseek-v4-flash",
+          "opencode-go/grok-4.5",
+          "openai/gpt-5.6-sol"
+        ],
+        "variant": "high",
+        "skills": [
+          "*",
+          "!make-interfaces-feel-better"
+        ],
+        "mcps": [
+          "*",
+          "!context7"
+        ]
+      },
+      "oracle": {
+        "model": [
+          "openai/gpt-5.6-sol",
+          "opencode-go/qwen3.7-max",
+          "opencode-go/deepseek-v4-pro"
+        ],
+        "variant": "max",
+        "skills": [
+          "simplify",
+          "verification-planning"
+        ],
+        "mcps": [
+          "codegraph"
+        ]
+      },
+      "fixer": {
+        "model": [
+          "openai/gpt-5.6-luna",
+          "opencode-go/deepseek-v4-flash",
+          "openai/gpt-5.6-luna-fast",
+          "openai/gpt-5.6-terra",
+          "opencode-go/kimi-k2.7-code"
+        ],
+        "variant": "high",
+        "skills": [
+          "deepwork",
+          "pnpm"
+        ],
+        "mcps": [
+          "codegraph"
+        ]
+      },
+      "explorer": {
+        "model": [
+          "openai/gpt-5.6-luna-fast",
+          "opencode-go/deepseek-v4-flash"
+        ],
+        "variant": "low",
+        "skills": [
+          "codemap"
+        ],
+        "mcps": []
+      },
+      "librarian": {
+        "model": [
+          "openai/gpt-5.6-luna",
+          "opencode-go/qwen3.7-plus",
+          "opencode/ling-3.0-flash-free"
+        ],
+        "variant": "low",
+        "skills": [],
+        "mcps": [
+          "websearch",
+          "context7",
+          "gh_grep"
+        ]
+      },
+      "designer": {
+        "model": [
+          "openai/gpt-5.6-terra-fast",
+          "opencode-go/kimi-k2.7-code",
+          "openai/gpt-5.6-terra",
+          "opencode-go/grok-4.5",
+          "opencode-go/kimi-k3"
+        ],
+        "variant": "high",
+        "skills": [
+          "agent-browser",
+          "make-interfaces-feel-better",
+          "better-icons"
+        ],
+        "mcps": [
+          "codegraph"
+        ]
+      }
+    }
+  },
+  "council": {
+    "presets": {
+      "default": {
+        "councillors": {
+          "reviewer-primary": {
+            "model": "openai/gpt-5.6-terra",
+            "prompt": "Focus on goal completion, security flaws, and architectural constraints."
+          },
+          "reviewer-secondary": {
+            "model": "opencode-go/deepseek-v4-pro",
+            "prompt": "Focus on performance, edge cases, and code maintainability."
+          },
+          "reviewer-tertiary": {
+            "model": "opencode-go/qwen3.7-max",
+            "prompt": "Focus on backward compatibility and test coverage."
+          }
+        }
+      }
+    }
+  }
+}

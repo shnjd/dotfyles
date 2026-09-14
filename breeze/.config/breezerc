@@ -1,0 +1,6 @@
+[Common]
+OutlineIntensity=OutlineLow
+ShadowSize=ShadowMedium
+
+[Style]
+MenuOpacity=90
