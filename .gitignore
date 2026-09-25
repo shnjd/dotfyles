@@ -1,0 +1,7 @@
+# App session/state files with personal data or machine-specific state.
+# These should live only on disk, never in the repo. See audit notes.
+kde/.config/kde.org/ghostwriter.conf
+opencode/.config/opencode/skills-manifest.json
+opencode/.config/opencode/opencode-notifier-state.json
+opencode/.config/opencode/*.bak
+gtk/.config/gtk-3.0/bookmarks
