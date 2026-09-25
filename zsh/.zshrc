@@ -171,3 +171,4 @@ alias ua-update-all='export TMPFILE="$(mktemp)"; \
       && sudo pacman -Syyu --noconfirm'
 
 export TERMINAL="alacritty"
+export PATH="$HOME/.local/bin:$PATH"
