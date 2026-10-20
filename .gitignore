@@ -5,3 +5,4 @@ opencode/.config/opencode/skills-manifest.json
 opencode/.config/opencode/opencode-notifier-state.json
 opencode/.config/opencode/*.bak
 gtk/.config/gtk-3.0/bookmarks
+nvim/.config/nvim/lazy-lock.json

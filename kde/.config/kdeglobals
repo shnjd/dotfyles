@@ -62,6 +62,20 @@ ForegroundNormal=205, 214, 244
 ForegroundPositive=166, 227, 161
 ForegroundVisited=203, 166, 247
 
+[Colors:Header][Inactive]
+BackgroundAlternate[$d]
+BackgroundNormal[$d]
+DecorationFocus[$d]
+DecorationHover[$d]
+ForegroundActive[$d]
+ForegroundInactive[$d]
+ForegroundLink[$d]
+ForegroundNegative[$d]
+ForegroundNeutral[$d]
+ForegroundNormal[$d]
+ForegroundPositive[$d]
+ForegroundVisited[$d]
+
 [Colors:Selection]
 BackgroundAlternate=166,227,161
 BackgroundNormal=166,227,161
@@ -120,13 +134,13 @@ ForegroundVisited=203, 166, 247
 
 [General]
 ColorSchemeHash=c450872dc068bdb11b46a0d8e2343caf9b60972f
-TerminalApplication=kitty
-TerminalService=kitty.desktop
+TerminalApplication=alacritty
+TerminalService=Alacritty.desktop
 XftAntialias=true
 XftHintStyle=hintslight
 XftSubPixel=none
-fixed=Noto Sans Mono,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
-font=Noto Sans,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
+fixed=Hack Nerd Font,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
+font=Hack Nerd Font,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
 menuFont=Overpass,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 smallestReadableFont=Overpass,8,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 toolBarFont=Overpass,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
@@ -136,17 +150,16 @@ Theme=Papirus-Dark
 
 [KDE]
 AnimationDurationFactor=0.35355339059327373
+DefaultDarkLookAndFeel=Catppuccin-Mocha-Green
 LookAndFeelPackage=Catppuccin-Mocha-Green
-widgetStyle=Breeze
+contrast=4
+frameContrast=0.2
 
 [KFileDialog Settings]
 Allow Expansion=false
 Automatically select filename extension=true
 Breadcrumb Navigation=true
 Decoration position=2
-LocationCombo Completionmode=5
-PathCombo Completionmode=5
-Show Bookmarks=false
 Show Full Path=false
 Show Inline Previews=true
 Show Preview=false
@@ -161,6 +174,9 @@ View Style=DetailTree
 
 [Shortcuts]
 FullScreen=
+
+[Sounds]
+Theme=freedesktop
 
 [WM]
 activeBackground=30,30,46

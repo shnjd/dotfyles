@@ -7,10 +7,11 @@ TERM = "xterm-256color"
 
 [window]
 dimensions = { columns = 200, lines = 60 }
-dynamic_padding = true
+dynamic_padding = false
 decorations = "None"
-opacity = 0.8
+opacity = 0.95
 blur = true
+padding = { x = 6, y = 4 }
 
 [font]
 size = 10.0
